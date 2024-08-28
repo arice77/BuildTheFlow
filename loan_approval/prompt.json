@@ -1,0 +1,14 @@
+{
+    "createdBy": "abin.saji@bcah.christuniversity.in",
+    "updatedBy": "abin.saji@bcah.christuniversity.in",
+    "name": "loan_document_classification",
+    "template": "We have a document that was scanned using OCR for a loan approval process. You need to classify the document based on the provided OCR content. The document could be one of these: Paystub, Bank Statement, Tax Return, Proof of Employment, or Loan Application. If the provided content does not match any of these documents, you must reply NO_MATCH. Here is the content of a document that was scanned using OCR:\n\n ${text} \n\nYour response:",
+    "description": "Classify a document according to its content for loan approval",
+    "variables": [
+      "text"
+    ],
+    "integrations": [
+      "open-ai:gpt-3.5-turbo"
+    ]
+  }
+  

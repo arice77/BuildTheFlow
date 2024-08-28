@@ -1,0 +1,14 @@
+{
+    "createdBy": "abin.saji@bcah.christuniversity.in",
+    "updatedBy": "abin.saji@bcah.christuniversity.in",
+    "name": "customer_onboarding_document_classification",
+    "template": "We have a document that was scanned using OCR for customer onboarding purposes related to investment accounts. You need to classify the document based on the provided OCR content. The document could be one of these: Investment Account Application, Proof of Identity, Proof of Address, Income Verification, or Tax Documents. If the provided content does not match any of these documents, you must reply NO_MATCH. Here is the content of a document that was scanned using OCR:\n\n ${text} \n\nYour response:",
+    "description": "Classify a document according to its content for customer onboarding related to investment accounts",
+    "variables": [
+      "text"
+    ],
+    "integrations": [
+      "open-ai:gpt-3.5-turbo"
+    ]
+  }
+  

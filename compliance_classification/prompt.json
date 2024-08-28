@@ -1,0 +1,14 @@
+{
+    "createdBy": "abin.saji@bcah.christuniversity.in",
+    "updatedBy": "abin.saji@bcah.christuniversity.in",
+    "name": "compliance_document_classification",
+    "template": "We have a document that was scanned using OCR for compliance purposes. You need to classify the document based on the provided OCR content. The document could be one of these: Anti-Money Laundering Report, Know Your Customer Form, Compliance Certificate, Risk Assessment Report, or Transaction Record. If the provided content does not match any of these documents, you must reply NO_MATCH. Here is the content of a document that was scanned using OCR:\n\n ${text} \n\nYour response:",
+    "description": "Classify a document according to its content for compliance purposes",
+    "variables": [
+      "text"
+    ],
+    "integrations": [
+      "open-ai:gpt-3.5-turbo"
+    ]
+  }
+  
